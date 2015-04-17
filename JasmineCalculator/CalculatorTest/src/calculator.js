@@ -1,6 +1,14 @@
 var Calculator = function(){
+    /**
+     * Calculator memory
+     * @type {int}
+     */
     var _memory = 0;
-    //var _res;
+
+    /**
+     * Return the sum of a and b or a and the calculator memory
+     * @return {int}
+     */
     this.add = function(a,b){
         if(isNaN(a) || ( b != undefined && isNaN(b)))
         {
@@ -20,7 +28,12 @@ var Calculator = function(){
             }
             return _memory;
         }
-    }
+    };
+
+    /**
+     * Return the subtraction of a minus b or a minus the calculator memory
+     * @return {int}
+     */
     this.substract = function(a,b){
         if(isNaN(a) || ( b != undefined && isNaN(b)))
         {
@@ -40,7 +53,12 @@ var Calculator = function(){
             }
             return _memory;
         }
-    }
+    };
+
+    /**
+     * Return the multiplication of a and b or a and the calculator memory
+     * @return {int}
+     */
     this.multiply = function(a,b){
         if(isNaN(a) || ( b != undefined && isNaN(b)))
         {
@@ -60,7 +78,12 @@ var Calculator = function(){
             }
             return _memory;
         }
-    }
+    };
+
+    /**
+     * Return the division of a and b or a and the calculator memory
+     * @return {int}
+     */
     this.divide = function(a,b){
         if(isNaN(a) || ( b != undefined && isNaN(b)))
         {
@@ -84,11 +107,18 @@ var Calculator = function(){
             }
             return _memory;
         }
-    }
+    };
+
+    /**
+     * Reset the calculator memory
+     */
     this.resetMemory = function () {
         _memory = 0;
     };
 
+    /**
+     * Set the calculator memory
+     */
     this.setMemory = function(value){
         _memory = value;
     };

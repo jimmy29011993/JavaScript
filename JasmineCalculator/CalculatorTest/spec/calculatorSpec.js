@@ -1,6 +1,8 @@
 
 describe("Calculator", function () {
-    /*Add operations*/
+    /*
+     *Add operations
+     * */
     describe('Add',function(){
         var calculator;
         beforeEach(function () {
@@ -41,7 +43,9 @@ describe("Calculator", function () {
         });
     });
 
-    /*Substract operations*/
+    /*
+     *Substract operations
+     * */
     describe('Substract',function(){
         var calculator;
         beforeEach(function () {
@@ -81,7 +85,9 @@ describe("Calculator", function () {
         });
     });
 
-    /*Multiply operations*/
+    /*
+     *Multiply operations
+     * */
     describe('Multiply',function(){
         var calculator;
         beforeEach(function () {
@@ -122,7 +128,9 @@ describe("Calculator", function () {
         });
     });
 
-    /*Divide operations*/
+    /*
+     *Divide operations
+     * */
     describe('Divide',function(){
         var calculator;
         beforeEach(function () {
